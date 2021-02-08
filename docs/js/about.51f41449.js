@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{b789:function(e,t,n){"use strict";n.r(t);var s=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},a=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"cart"},[n("h1",[e._v("TODO Listing des recettes avec ingredients totaux à acheter")])])}],c=n("2877"),r={},i=Object(c["a"])(r,s,a,!1,null,null,null);t["default"]=i.exports}}]);
+//# sourceMappingURL=about.51f41449.js.map

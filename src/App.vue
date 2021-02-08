@@ -2,13 +2,14 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/test">Test</router-link>
+      <router-link to="/fav">Favories</router-link> |
+      <router-link to="/cart">Cart</router-link>
     </div>
     <router-view/>
+    <div id="main">
+    </div>
   </div>
 </template>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -29,5 +30,10 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#main {
+  box-shadow: 5px grey;
+  margin: 0 5%;
 }
 </style>
