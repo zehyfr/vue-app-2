@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0aa7e1"],{"10f2":function(e,t,s){"use strict";s.r(t);var n=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},a=[function(){var e=this,t=e.$createElement,s=e._self._c||t;return s("div",{staticClass:"favories"},[s("p",[e._v("TODO, liste des recettes mise en favories, cilquables")])])}],c=s("2877"),i={},l=Object(c["a"])(i,n,a,!1,null,null,null);t["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-2d0aa7e1.afb7682d.js.map

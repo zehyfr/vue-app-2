@@ -2,8 +2,7 @@
     <div id="recipeBox">
         <img id="recipePicture" :src=srcImg>
         <span id="recipeTitle">{{title}}</span>
-        <img class="rButton" src="@/assets/favorite.png">
-        <img class="rButton" src="@/assets/plus.png">
+        <img class="rButton" src="@/assets/favorite.png" @click="addFav">
     </div>
 </template>
 
@@ -14,7 +13,35 @@ export default {
         "title",
         "recipeId",
         "srcImg"
-    ]
+    ],
+    methods :{
+        addFav() {
+            var recipe = {
+                "title" : this.title,
+                "recipeId" : this.recipeId,
+                "srcImg" : this.srcImg
+            };
+            
+            var favs = []
+            if(localStorage.getItem("listFav") !== null){
+                favs = JSON.parse(localStorage.getItem("listFav"));
+            }
+
+            var i = -1;
+            favs.forEach((fav, index) => {
+                if(fav.recipeId == this.recipeId){
+                    i = index;
+                }
+            });
+            if(i == -1){
+                favs.push(recipe);
+            }else{
+                favs.splice(i, 1);
+            }
+                
+            localStorage["listFav"] = JSON.stringify(favs);
+        }
+    }
 }
 </script>
 
