@@ -22,6 +22,7 @@ export default {
                 "srcImg" : this.srcImg
             };
             
+            localStorage.clear();
             var favs = []
             if(localStorage.getItem("listFav") !== null){
                 favs = JSON.parse(localStorage.getItem("listFav"));

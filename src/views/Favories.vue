@@ -22,6 +22,7 @@ export default {
     },
     methods :{
         getFavList : function(){
+            console.log("truc");
             if(localStorage.getItem("listFav") !== null){
                 this.recipes = JSON.parse(localStorage.getItem("listFav"));
             }
